@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Id Verification</title>
+  <script type="text/javascript">
+  function Verification(val){
+    var reg=/^([A-Za-z0-9_\.\-]{1,})\@([A-Za-z0-9]{1,})\.([A-Za-z]{2,4})$/;
+    if (reg.test(val)==false){
+      alert("Invalid mail id");
+    }
+    else{
+      alert("Valid mail id");
+    }
+  }
+
+  </script>
+</head>
+<body>
+  <h1>Email Id Verification</h1>
+  <hr>
+  <i>Enter your email id for Verification:-</i><br>
+  <form name="email_form">
+    <input type="text" name="email" value="">
+    <input type="button" name="email_button" value="Submit" onClick="Verification(email.value)">
+</form>
+</body>
+</html>
